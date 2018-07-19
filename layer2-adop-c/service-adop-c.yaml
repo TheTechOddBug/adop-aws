@@ -178,21 +178,25 @@ Resources:
           DeleteOnTermination: 'true'
           VolumeSize: 8
           VolumeType: gp2
+          Encrypted: 'true'
       - DeviceName: /dev/sdf
         Ebs:
           DeleteOnTermination: 'false'
           VolumeType: gp2
           VolumeSize: 15
+          Encrypted: 'true'
       - DeviceName: /dev/sdg
         Ebs:
           DeleteOnTermination: 'false'
           VolumeType: gp2
           VolumeSize: 25
+          Encrypted: 'true'
       - DeviceName: /dev/sdh
         Ebs:
           DeleteOnTermination: 'false'
           VolumeType: gp2
           VolumeSize: 25
+          Encrypted: 'true'
       ImageId:
         Fn::FindInMap:
         - RegionMap
